@@ -1,0 +1,240 @@
+
+body{
+	width: 100%;
+	height: 100%;
+	background-color: hsl(229, 57%, 11%);
+	font-family: 'Raleway', sans-serif;
+}
+.bg .bgimg{
+	width: 100%;
+	max-width: 1440px;
+	height: 50%;
+	position: absolute;
+	bottom: 0;
+}
+
+p{
+	font-family: 'Raleway', sans-serif;
+	font-size: 8px;
+	color: white;
+}
+.title{
+	color: black;
+}
+
+.box1 , .box2{
+	height: 200px;
+	width: 250px;
+	background-color:  hsl(228, 56%, 26%);
+
+}
+.boxcontainer{
+
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: center;
+	position: absolute; 
+	top: 50%;
+	left: 50%; 
+	transform: translate(-50% , -50%);
+}
+.box1{
+	margin-right: 30px;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 100px;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 5px;
+	width: 300px;
+	
+}
+.box2{
+	border-radius: 8px;
+	width: 450px;
+	height: 150px;
+	margin-top: 45px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+.sm{
+    width: 38px;
+    height: 34px;
+    background-color: hsl(229, 57%, 11%);
+    position: relative;
+    top: 116px;
+    left: 54px;
+    margin-right: 15px;
+    border-radius: 6px;
+    float: left;
+    display: flex;
+}
+.sm .icons{
+    margin-left: 11.5px;
+    margin-top: 5px;
+    width: 43%;
+}
+
+.logo
+{
+    position: absolute;
+    top: 38px;
+    left: 22px;
+}
+.rect1{
+	width: 80%;
+	height: 10%;
+	border-radius: 10px;
+	background-color:#00000042;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	
+}
+
+.buttons button{
+	padding: 1.6em 1.6em;
+    border-radius: 10px;
+    border: 1px solid hsl(229, 57%, 11%);
+    margin-right: 15px;
+    background-color: hsl(229, 57%, 11%);
+
+}
+
+.document{
+background-image: url(icon-document.svg);
+    background-size: 18px;
+}
+
+.upload{
+background-image: url(icon-upload.svg);
+    background-size: 25px;
+}
+
+.folder{
+	background-image: url(icon-folder.svg);
+    background-size: 23px;
+}
+
+.upload, .folder, .document {
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.rect1 .rect2{
+	width: 80%;
+	height: 74%;
+	border-radius: 10px;
+	background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.rect1 .rect2 .ellipse{
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	background-color:white;
+}
+.gb{
+	width: 80%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;	
+}
+.pg{
+	width: 80%;	
+	font-size: 'Raleway', sans-serif;
+}
+.triangle {
+    position: absolute;
+    left: 738px;
+    top: 61px;
+    width: 1;
+    height: 0;
+    border-left: 0px solid transparent;
+    border-right: 25px solid white;
+    border-top: 0px solid white;
+    border-bottom: 28px solid transparent;
+    /* background-color: violet; */
+    width: -4%;
+}
+.rect{
+	 position: absolute;
+	 background-color: white;
+	 left: 648px;
+	 top: 10px;
+     width: 115px;
+     height: 60px;
+     border-radius: 10px;
+     display: flex;
+     justify-content: center;
+}
+
+.bg_mobile .bg_mobile_img
+{
+
+	width: 100%;
+	max-width: 1440px;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: none;
+	
+}
+
+@media (max-width: 600px){
+.boxcontainer{
+	flex-direction: column;
+	
+}
+.rect{
+	width: 133px;
+	left: 26%;
+	top: 93%;
+}
+.logo{
+
+    position: relative;
+    top: 38px;
+    left: -3px;
+}
+.box2{
+
+	width: 300px;
+}
+.box1{
+	margin: 0;
+}
+.bg .bgimg{
+	display: none;
+}
+
+.triangle{
+	display: none;
+}
+.bg_mobile .bg_mobile_img
+{
+
+	width: 100%;
+	max-width: 1440px;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: block;
+	
+}
+
+
+}
+
+@media only screen and (min-width: 375px){
+
+
+	
+}
